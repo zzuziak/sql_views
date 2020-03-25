@@ -12,7 +12,7 @@ class PagesController < ApplicationController
   end
 
   def user_orders
-    # to do: display total orders per user
+    # to do: display total orders and account_type per user 
   end
 
 end
