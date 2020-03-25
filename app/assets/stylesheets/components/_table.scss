@@ -1,0 +1,25 @@
+table {
+    margin:auto;
+    width:100%;
+}
+th, td {
+    padding:5px 10px;
+    border:1px solid #000;
+}
+
+tbody {
+    overflow:auto;
+    overflow-x:hidden;
+    width:100%;
+}
+tbody tr {
+    width:100%;
+}
+
+tbody{
+  scrollbar-face-color: ThreeDFace !important;
+  scrollbar-shadow-color: ThreeDDarkShadow !important;
+  scrollbar-highlight-color: ThreeDHighlight !important;
+  scrollbar-track-color: Scrollbar !important;
+  scrollbar-arrow-color: ButtonText !important;
+}
