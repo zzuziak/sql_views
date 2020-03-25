@@ -11,4 +11,8 @@ class PagesController < ApplicationController
     @international_orders = ActiveRecord::Base.connection.execute(query).to_a
   end
 
+  def user_orders
+    # to do: display total orders per user
+  end
+
 end

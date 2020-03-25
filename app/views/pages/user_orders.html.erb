@@ -1,0 +1,27 @@
+<h1 class="my-3">International orders per user</h1>
+<%= link_to "<< All orders", root_path, class: "btn btn-info m-3" %>
+
+<% if @international_orders %>
+  <table class="table">
+    <thead class="thead-dark">
+      <tr>
+        <th scope="col">#</th>
+        <% @international_orders.first.each do |key,value| %>
+          <th scope="col"><%= key %></th>
+        <% end %>
+      </tr>
+    </thead>
+    <tbody>
+        <% @international_orders.each_with_index do |order, i| %>
+        <tr>
+        <th scope="row"><%= i + 1 %></th>
+          <% order.each do |_, value| %>
+            <td><%= value %></td>
+          <% end %>
+        </tr>
+        <% end %>
+    </tbody>
+  </table>
+<% else %>
+  <p>TODO: Show total amount of orders per user</p>
+<% end %>
