@@ -4,18 +4,18 @@
 </h1>
 
 
-<% if @international_orders %>
+<% if @international_total_orders %>
   <table class="table">
     <thead class="thead-dark">
       <tr>
         <th scope="col">#</th>
-        <% @international_orders.first.each do |key,value| %>
+        <% @international_total_orders.first.each do |key,value| %>
           <th scope="col"><%= key %></th>
         <% end %>
       </tr>
     </thead>
     <tbody>
-        <% @international_orders.each_with_index do |order, i| %>
+        <% @international_total_orders.each_with_index do |order, i| %>
         <tr>
         <th scope="row"><%= i + 1 %></th>
           <% order.each do |_, value| %>
